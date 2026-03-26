@@ -60,8 +60,8 @@ router.post("/create", async (req: AuthenticatedRequest, res: Response) => {
       const customer = await razorpay.customers.create({
         name: profile.full_name ?? profile.email,
         email: profile.email,
-        fail_existing: "0", // don't fail if customer already exists in Razorpay
-      });
+        fail_existing: 0, // don't fail if customer already exists in Razorpay
+      }) as { id: string };
       customerId = customer.id;
 
       // Persist the customer ID on the profile
