@@ -4,6 +4,8 @@ import { createServerClient as createServiceClient } from "@/lib/supabase/server
 import Link from "next/link";
 import LeaderboardClient from "./LeaderboardClient";
 
+export const dynamic = "force-dynamic";
+
 interface LeaderboardEntry {
   position: number;
   userId: string;

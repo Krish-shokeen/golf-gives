@@ -1,6 +1,8 @@
 import { createServerClient as createServiceClient } from "@/lib/supabase/server";
 import CharitiesManager from "./CharitiesManager";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminCharitiesPage() {
   const supabase = createServiceClient();
   const { data: charities } = await supabase

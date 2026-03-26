@@ -3,6 +3,8 @@ import { createServerClient } from "@/lib/supabase/server";
 import { createServerClient as createSsrClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(req: NextRequest) {
   // Verify the user is authenticated
   const cookieStore = await cookies();

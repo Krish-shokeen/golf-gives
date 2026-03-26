@@ -5,6 +5,8 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import AdminLogout from "./AdminLogout";
 
+export const dynamic = "force-dynamic";
+
 const NAV_LINKS = [
   { href: "/admin", label: "📊 Analytics", exact: true },
   { href: "/admin/users", label: "👥 Users" },

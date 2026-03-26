@@ -1,6 +1,8 @@
 import { createServerClient as createServiceClient } from "@/lib/supabase/server";
 import UsersTable from "./UsersTable";
 
+export const dynamic = "force-dynamic";
+
 export interface AdminUser {
   id: string;
   full_name: string | null;

@@ -1,6 +1,8 @@
 import { createServerClient as createServiceClient } from "@/lib/supabase/server";
 import WinnersManager from "./WinnersManager";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminWinnersPage() {
   const supabase = createServiceClient();
   const { data: winners } = await supabase

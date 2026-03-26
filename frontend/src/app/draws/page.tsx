@@ -4,6 +4,8 @@ import { createServerClient as createServiceClient } from "@/lib/supabase/server
 import { redirect } from "next/navigation";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 interface DrawWinner { user_id: string; match_tier: number; prize_amount: number; verification_status: string; payment_status: string }
 interface Draw { id: string; month: string; mode: string; drawn_numbers: number[]; prize_pool_total: number; jackpot_carried: number; published_at: string | null; status: string; draw_winners: DrawWinner[] }
 

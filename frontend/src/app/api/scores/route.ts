@@ -3,6 +3,8 @@ import { createServerClient as createSsrClient } from "@supabase/ssr";
 import { createServerClient } from "@/lib/supabase/server";
 import { cookies } from "next/headers";
 
+export const dynamic = "force-dynamic";
+
 async function getUser() {
   const cookieStore = await cookies();
   const ssrClient = createSsrClient(

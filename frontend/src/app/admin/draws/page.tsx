@@ -1,6 +1,8 @@
 import { createServerClient as createServiceClient } from "@/lib/supabase/server";
 import DrawsManager from "./DrawsManager";
 
+export const dynamic = "force-dynamic";
+
 export interface DrawRecord {
   id: string;
   month: string;

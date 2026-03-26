@@ -1,5 +1,7 @@
 import { createServerClient as createServiceClient } from "@/lib/supabase/server";
 
+export const dynamic = "force-dynamic";
+
 function StatCard({ label, value, icon, sub }: { label: string; value: string | number; icon: string; sub?: string }) {
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 hover:shadow-md transition-shadow">
