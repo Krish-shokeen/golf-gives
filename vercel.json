@@ -1,16 +1,9 @@
 {
   "version": 2,
-  "buildCommand": "cd frontend && npm run build",
+  "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/.next",
   "installCommand": "cd frontend && npm install",
   "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key",
-    "NEXT_PUBLIC_RAZORPAY_KEY_ID": "@razorpay_key_id",
-    "NEXT_PUBLIC_APP_URL": "@app_url",
-    "NEXT_PUBLIC_API_URL": "@api_url"
-  },
   "headers": [
     {
       "source": "/api/(.*)",
